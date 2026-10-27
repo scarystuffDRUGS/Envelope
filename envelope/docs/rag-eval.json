@@ -1,0 +1,790 @@
+{
+  "generatedAt": "2026-10-26T21:13:03.317Z",
+  "weatherYear": 2025,
+  "scenarios": [
+    "none",
+    "dust",
+    "heat",
+    "ghg",
+    "all"
+  ],
+  "summary": [
+    {
+      "arm": "llm+rag",
+      "runs": 5,
+      "fallbacks": 0,
+      "sourceCharsPerReport": 9355.8,
+      "citationValidity": 1,
+      "weakSupportRate": 0.08108108108108109,
+      "citationsPerReport": 29.6,
+      "regulatoryCitedShare": 1,
+      "droppedPerReport": 1,
+      "droppedNumbersPerReport": 0.2,
+      "droppedUncitedPerReport": 0.8,
+      "retryRate": 0.6,
+      "meanSeconds": 62.720000000000006
+    },
+    {
+      "arm": "llm",
+      "runs": 5,
+      "fallbacks": 0,
+      "sourceCharsPerReport": 0,
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "citationsPerReport": 0,
+      "regulatoryCitedShare": 0,
+      "droppedPerReport": 0,
+      "droppedNumbersPerReport": 0,
+      "droppedUncitedPerReport": 0,
+      "retryRate": 0,
+      "meanSeconds": 30.880000000000003
+    },
+    {
+      "arm": "template+rag",
+      "runs": 5,
+      "fallbacks": 0,
+      "sourceCharsPerReport": 11272.8,
+      "citationValidity": 1,
+      "weakSupportRate": 0.022222222222222223,
+      "citationsPerReport": 9,
+      "regulatoryCitedShare": 1,
+      "droppedPerReport": 0,
+      "droppedNumbersPerReport": 0,
+      "droppedUncitedPerReport": 0,
+      "retryRate": 0,
+      "meanSeconds": 0.08
+    }
+  ],
+  "retrieval": [
+    {
+      "mode": "fixed",
+      "passagesPerReport": 16.4,
+      "distinctAcrossScenarios": 20,
+      "meanPairwiseJaccard": 0.8487409700722394,
+      "complianceDocs": [
+        "eia-2006",
+        "cpcb-cd-2017",
+        "naaqs-2009"
+      ],
+      "dustDocs": [
+        "cpcb-cd-2017",
+        "naaqs-2009",
+        "ap42-13.2.2",
+        "ap42-13.2.5"
+      ],
+      "perScenario": [
+        {
+          "scenario": "none",
+          "chunks": [
+            "eia-2006#35",
+            "eia-2006#68",
+            "eia-2006#21",
+            "ap42-13.2.2#8",
+            "ap42-13.2.4#1",
+            "ap42-13.2.5#9",
+            "cpcb-cd-2017#46",
+            "naaqs-2009#1",
+            "cpcb-cd-2017#2",
+            "eia-2006#93",
+            "eia-2006#126",
+            "cpcb-cd-2017#40",
+            "cpcb-cd-2017#49",
+            "ap42-13.2.2#25",
+            "ap42-13.2.4#6",
+            "ap42-13.2.2#11"
+          ]
+        },
+        {
+          "scenario": "dust",
+          "chunks": [
+            "eia-2006#35",
+            "eia-2006#68",
+            "eia-2006#21",
+            "ap42-13.2.2#8",
+            "ap42-13.2.4#1",
+            "ap42-13.2.5#9",
+            "cpcb-cd-2017#46",
+            "naaqs-2009#1",
+            "cpcb-cd-2017#49",
+            "cpcb-cd-2017#2",
+            "eia-2006#93",
+            "cpcb-cd-2017#40",
+            "ap42-13.2.2#25",
+            "ap42-13.2.4#6",
+            "ap42-13.2.2#11",
+            "ap42-13.2.2#21",
+            "eia-2006#126"
+          ]
+        },
+        {
+          "scenario": "heat",
+          "chunks": [
+            "eia-2006#35",
+            "eia-2006#68",
+            "eia-2006#21",
+            "ap42-13.2.2#8",
+            "ap42-13.2.4#1",
+            "ap42-13.2.5#9",
+            "cpcb-cd-2017#46",
+            "naaqs-2009#1",
+            "cpcb-cd-2017#2",
+            "eia-2006#93",
+            "eia-2006#126",
+            "cpcb-cd-2017#40",
+            "cpcb-cd-2017#49",
+            "ap42-13.2.2#25",
+            "ap42-13.2.4#6",
+            "ap42-13.2.2#11"
+          ]
+        },
+        {
+          "scenario": "ghg",
+          "chunks": [
+            "eia-2006#35",
+            "eia-2006#68",
+            "eia-2006#21",
+            "ap42-13.2.2#8",
+            "ap42-13.2.4#1",
+            "ap42-13.2.5#9",
+            "cpcb-cd-2017#46",
+            "naaqs-2009#1",
+            "cpcb-cd-2017#20",
+            "cpcb-cd-2017#2",
+            "eia-2006#93",
+            "cpcb-cd-2017#40",
+            "cpcb-cd-2017#49",
+            "ap42-13.2.2#25",
+            "ap42-13.2.4#6",
+            "ap42-13.2.2#11"
+          ]
+        },
+        {
+          "scenario": "all",
+          "chunks": [
+            "eia-2006#35",
+            "eia-2006#68",
+            "eia-2006#21",
+            "ap42-13.2.2#8",
+            "ap42-13.2.4#1",
+            "ap42-13.2.5#9",
+            "cpcb-cd-2017#46",
+            "naaqs-2009#1",
+            "cpcb-cd-2017#49",
+            "cpcb-cd-2017#2",
+            "ap42-13.2.2#14",
+            "cpcb-cd-2017#40",
+            "ap42-13.2.2#25",
+            "ap42-13.2.4#6",
+            "ap42-13.2.2#11",
+            "ap42-13.2.5#1",
+            "cpcb-cd-2017#20"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "payload",
+      "passagesPerReport": 21.8,
+      "distinctAcrossScenarios": 29,
+      "meanPairwiseJaccard": 0.8280477855477854,
+      "complianceDocs": [
+        "eia-2006",
+        "naaqs-2009",
+        "cpcb-cd-2017"
+      ],
+      "dustDocs": [
+        "ap42-13.2.2",
+        "naaqs-2009",
+        "cpcb-cd-2017"
+      ],
+      "perScenario": [
+        {
+          "scenario": "none",
+          "chunks": [
+            "eia-2006#67",
+            "eia-2006#35",
+            "eia-2006#21",
+            "ap42-13.2.2#8",
+            "ap42-13.2.4#1",
+            "ap42-13.2.2#3",
+            "naaqs-2009#1",
+            "cpcb-cd-2017#46",
+            "cpcb-cd-2017#40",
+            "cpcb-cd-2017#2",
+            "eia-2006#93",
+            "cpcb-cd-2017#48",
+            "cpcb-cd-2017#49",
+            "ap42-13.2.2#25",
+            "ap42-13.2.2#6",
+            "ap42-13.2.5#8",
+            "eia-2006#63",
+            "ap42-13.2.5#9",
+            "ap42-13.2.4#6",
+            "ap42-13.2.2#11"
+          ]
+        },
+        {
+          "scenario": "dust",
+          "chunks": [
+            "eia-2006#67",
+            "eia-2006#35",
+            "eia-2006#21",
+            "ap42-13.2.2#8",
+            "ap42-13.2.4#1",
+            "ap42-13.2.2#3",
+            "naaqs-2009#1",
+            "cpcb-cd-2017#46",
+            "ap42-13.2.2#21",
+            "ap42-13.2.2#17",
+            "cpcb-cd-2017#2",
+            "cpcb-cd-2017#49",
+            "cpcb-cd-2017#48",
+            "cpcb-cd-2017#40",
+            "ap42-13.2.2#25",
+            "ap42-13.2.2#6",
+            "ap42-13.2.5#8",
+            "eia-2006#63",
+            "ap42-13.2.5#9",
+            "ap42-13.2.4#6",
+            "eia-2006#93",
+            "ap42-13.2.2#11"
+          ]
+        },
+        {
+          "scenario": "heat",
+          "chunks": [
+            "eia-2006#67",
+            "eia-2006#35",
+            "eia-2006#21",
+            "ap42-13.2.2#8",
+            "ap42-13.2.4#1",
+            "ap42-13.2.2#3",
+            "naaqs-2009#1",
+            "cpcb-cd-2017#46",
+            "cpcb-cd-2017#40",
+            "cpcb-cd-2017#2",
+            "eia-2006#93",
+            "cpcb-cd-2017#48",
+            "cpcb-cd-2017#49",
+            "ap42-13.2.2#25",
+            "ap42-13.2.2#6",
+            "ap42-13.2.5#8",
+            "eia-2006#63",
+            "ap42-13.2.5#9",
+            "ap42-13.2.4#6",
+            "eia-2006#126",
+            "naaqs-2009#3",
+            "ap42-13.2.2#11"
+          ]
+        },
+        {
+          "scenario": "ghg",
+          "chunks": [
+            "eia-2006#67",
+            "eia-2006#35",
+            "eia-2006#21",
+            "ap42-13.2.2#8",
+            "ap42-13.2.4#1",
+            "ap42-13.2.2#3",
+            "naaqs-2009#1",
+            "cpcb-cd-2017#46",
+            "cpcb-cd-2017#40",
+            "cpcb-cd-2017#2",
+            "cpcb-cd-2017#20",
+            "cpcb-cd-2017#5",
+            "cpcb-cd-2017#48",
+            "cpcb-cd-2017#49",
+            "ap42-13.2.2#25",
+            "ap42-13.2.2#6",
+            "ap42-13.2.5#8",
+            "eia-2006#63",
+            "ap42-13.2.5#9",
+            "ap42-13.2.4#6",
+            "eia-2006#93",
+            "ap42-13.2.2#11"
+          ]
+        },
+        {
+          "scenario": "all",
+          "chunks": [
+            "eia-2006#67",
+            "eia-2006#35",
+            "eia-2006#21",
+            "ap42-13.2.2#8",
+            "ap42-13.2.4#1",
+            "ap42-13.2.2#3",
+            "naaqs-2009#1",
+            "cpcb-cd-2017#46",
+            "ap42-13.2.2#21",
+            "eia-2006#73",
+            "cpcb-cd-2017#2",
+            "cpcb-cd-2017#49",
+            "cpcb-cd-2017#48",
+            "cpcb-cd-2017#40",
+            "ap42-13.2.2#25",
+            "ap42-13.2.2#6",
+            "ap42-13.2.5#8",
+            "eia-2006#63",
+            "ap42-13.2.5#9",
+            "ap42-13.2.4#6",
+            "ap42-13.2.2#14",
+            "ap42-13.2.5#1",
+            "ap42-13.2.2#11"
+          ]
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "scenario": "none",
+      "arm": "llm+rag",
+      "writer": "Gemini, figures and citations validated",
+      "retried": true,
+      "seconds": 73.8,
+      "passages": 20,
+      "sent": 20,
+      "sourceChars": 10227,
+      "fellBack": false,
+      "references": 18,
+      "citations": {
+        "total": 36,
+        "valid": 36,
+        "weak": 3
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.08333333333333333,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 1,
+        "numbers": 1,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 57,
+      "regulatory": 6,
+      "regulatoryCited": 6
+    },
+    {
+      "scenario": "none",
+      "arm": "llm",
+      "writer": "Gemini, figures validated",
+      "retried": false,
+      "seconds": 15.3,
+      "passages": 0,
+      "sent": 0,
+      "sourceChars": 0,
+      "fellBack": false,
+      "references": 0,
+      "citations": {
+        "total": 0,
+        "valid": 0,
+        "weak": 0
+      },
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 64,
+      "regulatory": 6,
+      "regulatoryCited": 0
+    },
+    {
+      "scenario": "none",
+      "arm": "template+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 0.2,
+      "passages": 20,
+      "sent": 20,
+      "sourceChars": 10227,
+      "fellBack": false,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 1
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.1111111111111111,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 50,
+      "regulatory": 2,
+      "regulatoryCited": 2
+    },
+    {
+      "scenario": "dust",
+      "arm": "llm+rag",
+      "writer": "Gemini, figures and citations validated",
+      "retried": false,
+      "seconds": 41.4,
+      "passages": 22,
+      "sent": 22,
+      "sourceChars": 11324,
+      "fellBack": false,
+      "references": 19,
+      "citations": {
+        "total": 42,
+        "valid": 42,
+        "weak": 6
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.14285714285714285,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 65,
+      "regulatory": 8,
+      "regulatoryCited": 8
+    },
+    {
+      "scenario": "dust",
+      "arm": "llm",
+      "writer": "Gemini, figures validated",
+      "retried": false,
+      "seconds": 15.6,
+      "passages": 0,
+      "sent": 0,
+      "sourceChars": 0,
+      "fellBack": false,
+      "references": 0,
+      "citations": {
+        "total": 0,
+        "valid": 0,
+        "weak": 0
+      },
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 29,
+      "regulatory": 3,
+      "regulatoryCited": 0
+    },
+    {
+      "scenario": "dust",
+      "arm": "template+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 0,
+      "passages": 22,
+      "sent": 22,
+      "sourceChars": 11324,
+      "fellBack": false,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 0
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 50,
+      "regulatory": 2,
+      "regulatoryCited": 2
+    },
+    {
+      "scenario": "heat",
+      "arm": "llm+rag",
+      "writer": "Groq, figures and citations validated",
+      "retried": false,
+      "seconds": 52.3,
+      "passages": 22,
+      "sent": 3,
+      "sourceChars": 1628,
+      "fellBack": false,
+      "references": 1,
+      "citations": {
+        "total": 1,
+        "valid": 1,
+        "weak": 0
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0,
+      "flaggedUncited": 2,
+      "dropped": {
+        "total": 2,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 2
+      },
+      "sentences": 19,
+      "regulatory": 1,
+      "regulatoryCited": 1
+    },
+    {
+      "scenario": "heat",
+      "arm": "llm",
+      "writer": "Groq, figures validated",
+      "retried": false,
+      "seconds": 50.4,
+      "passages": 0,
+      "sent": 0,
+      "sourceChars": 0,
+      "fellBack": false,
+      "references": 0,
+      "citations": {
+        "total": 0,
+        "valid": 0,
+        "weak": 0
+      },
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 29,
+      "regulatory": 4,
+      "regulatoryCited": 0
+    },
+    {
+      "scenario": "heat",
+      "arm": "template+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 0,
+      "passages": 22,
+      "sent": 22,
+      "sourceChars": 11213,
+      "fellBack": false,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 0
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 50,
+      "regulatory": 2,
+      "regulatoryCited": 2
+    },
+    {
+      "scenario": "ghg",
+      "arm": "llm+rag",
+      "writer": "Gemini, figures and citations validated",
+      "retried": true,
+      "seconds": 69.7,
+      "passages": 22,
+      "sent": 22,
+      "sourceChars": 11666,
+      "fellBack": false,
+      "references": 21,
+      "citations": {
+        "total": 33,
+        "valid": 33,
+        "weak": 1
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.030303030303030304,
+      "flaggedUncited": 1,
+      "dropped": {
+        "total": 1,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 1
+      },
+      "sentences": 64,
+      "regulatory": 5,
+      "regulatoryCited": 5
+    },
+    {
+      "scenario": "ghg",
+      "arm": "llm",
+      "writer": "Groq, figures validated",
+      "retried": false,
+      "seconds": 52.5,
+      "passages": 0,
+      "sent": 0,
+      "sourceChars": 0,
+      "fellBack": false,
+      "references": 0,
+      "citations": {
+        "total": 0,
+        "valid": 0,
+        "weak": 0
+      },
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 45,
+      "regulatory": 3,
+      "regulatoryCited": 0
+    },
+    {
+      "scenario": "ghg",
+      "arm": "template+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 0.1,
+      "passages": 22,
+      "sent": 22,
+      "sourceChars": 11666,
+      "fellBack": false,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 0
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 50,
+      "regulatory": 2,
+      "regulatoryCited": 2
+    },
+    {
+      "scenario": "all",
+      "arm": "llm+rag",
+      "writer": "Gemini, figures and citations validated",
+      "retried": true,
+      "seconds": 76.4,
+      "passages": 23,
+      "sent": 23,
+      "sourceChars": 11934,
+      "fellBack": false,
+      "references": 22,
+      "citations": {
+        "total": 36,
+        "valid": 36,
+        "weak": 2
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.05555555555555555,
+      "flaggedUncited": 1,
+      "dropped": {
+        "total": 1,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 1
+      },
+      "sentences": 65,
+      "regulatory": 6,
+      "regulatoryCited": 6
+    },
+    {
+      "scenario": "all",
+      "arm": "llm",
+      "writer": "Gemini, figures validated",
+      "retried": false,
+      "seconds": 20.6,
+      "passages": 0,
+      "sent": 0,
+      "sourceChars": 0,
+      "fellBack": false,
+      "references": 0,
+      "citations": {
+        "total": 0,
+        "valid": 0,
+        "weak": 0
+      },
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 42,
+      "regulatory": 4,
+      "regulatoryCited": 0
+    },
+    {
+      "scenario": "all",
+      "arm": "template+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 0.1,
+      "passages": 23,
+      "sent": 23,
+      "sourceChars": 11934,
+      "fellBack": false,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 0
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 50,
+      "regulatory": 2,
+      "regulatoryCited": 2
+    }
+  ]
+}

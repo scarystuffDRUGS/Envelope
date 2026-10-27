@@ -1,0 +1,561 @@
+{
+ "id": "cams-correction-ncr-2026-10-27",
+ "region": "Delhi NCR",
+ "period": {
+  "from": "2025-02-01",
+  "to": "2026-10-15"
+ },
+ "method": "LightGBM gradient-boosted trees on log1p(station PM), Duan smearing back-transform",
+ "inputs": "CAMS global (Open-Meteo air quality) PM10, PM2.5, dust, AOD; ERA5 (Open-Meteo archive); hour, day of year, weekend",
+ "target": "CPCB continuous ambient monitoring stations via the OpenAQ archive, hourly means",
+ "trainedAreaKm": 25,
+ "stations": [
+  {
+   "id": 10825,
+   "name": "Sector-51, Gurugram - HSPCB",
+   "lat": 28.4227,
+   "lon": 77.0667,
+   "heldOut": true
+  },
+  {
+   "id": 10900,
+   "name": "Teri Gram, Gurugram - HSPCB",
+   "lat": 28.4275,
+   "lon": 77.1465,
+   "heldOut": true
+  },
+  {
+   "id": 10921,
+   "name": "NISE Gwal Pahari, Gurugram - IMD",
+   "lat": 28.4227,
+   "lon": 77.1489,
+   "heldOut": true
+  },
+  {
+   "id": 301,
+   "name": "Vikas Sadan, Gurugram - HSPCB",
+   "lat": 28.4501,
+   "lon": 77.0263,
+   "heldOut": true
+  },
+  {
+   "id": 5570,
+   "name": "Aya Nagar, New Delhi - IMD",
+   "lat": 28.4743,
+   "lon": 77.1316,
+   "heldOut": true
+  },
+  {
+   "id": 6953,
+   "name": "Sector-2 IMT, Manesar - HSPCB",
+   "lat": 28.3607,
+   "lon": 76.9361,
+   "heldOut": true
+  },
+  {
+   "id": 10484,
+   "name": "Sri Aurobindo Marg, Delhi - DPCC",
+   "lat": 28.5313,
+   "lon": 77.1902,
+   "heldOut": false
+  },
+  {
+   "id": 5650,
+   "name": "IGI Airport (T3), Delhi - IMD",
+   "lat": 28.5628,
+   "lon": 77.118,
+   "heldOut": false
+  },
+  {
+   "id": 6931,
+   "name": "Dwarka-Sector 8, Delhi - DPCC",
+   "lat": 28.571,
+   "lon": 77.0719,
+   "heldOut": false
+  },
+  {
+   "id": 17,
+   "name": "R K Puram, Delhi - DPCC",
+   "lat": 28.5633,
+   "lon": 77.1869,
+   "heldOut": false
+  },
+  {
+   "id": 6934,
+   "name": "Dr. Karni Singh Shooting Range, Delhi - DPCC",
+   "lat": 28.4986,
+   "lon": 77.2648,
+   "heldOut": false
+  },
+  {
+   "id": 5586,
+   "name": "Sirifort, Delhi - CPCB",
+   "lat": 28.5504,
+   "lon": 77.2159,
+   "heldOut": false
+  },
+  {
+   "id": 10920,
+   "name": "New Industrial Town, Faridabad - HSPCB",
+   "lat": 28.3907,
+   "lon": 77.3006,
+   "heldOut": false
+  },
+  {
+   "id": 10908,
+   "name": "Sector 11, Faridabad - HSPCB",
+   "lat": 28.3761,
+   "lon": 77.3157,
+   "heldOut": false
+  },
+  {
+   "id": 8239,
+   "name": "Okhla Phase-2, Delhi - DPCC",
+   "lat": 28.5308,
+   "lon": 77.2713,
+   "heldOut": false
+  },
+  {
+   "id": 5622,
+   "name": "NSIT Dwarka, Delhi - CPCB",
+   "lat": 28.6091,
+   "lon": 77.0325,
+   "heldOut": false
+  },
+  {
+   "id": 10820,
+   "name": "Sector 30, Faridabad - HSPCB",
+   "lat": 28.4417,
+   "lon": 77.3217,
+   "heldOut": false
+  },
+  {
+   "id": 10488,
+   "name": "Najafgarh, Delhi - DPCC",
+   "lat": 28.5702,
+   "lon": 76.9338,
+   "heldOut": false
+  },
+  {
+   "id": 6972,
+   "name": "Nathu Colony, Ballabgarh - HSPCB",
+   "lat": 28.3419,
+   "lon": 77.3197,
+   "heldOut": false
+  },
+  {
+   "id": 8365,
+   "name": "Nehru Nagar, Delhi - DPCC",
+   "lat": 28.5679,
+   "lon": 77.2505,
+   "heldOut": false
+  },
+  {
+   "id": 6957,
+   "name": "Jawaharlal Nehru Stadium, Delhi - DPCC",
+   "lat": 28.5803,
+   "lon": 77.2338,
+   "heldOut": false
+  },
+  {
+   "id": 11607,
+   "name": "Lodhi Road, Delhi - IITM",
+   "lat": 28.5883,
+   "lon": 77.2217,
+   "heldOut": false
+  },
+  {
+   "id": 5627,
+   "name": "CRRI Mathura Road, New Delhi - IMD",
+   "lat": 28.5512,
+   "lon": 77.2736,
+   "heldOut": false
+  },
+  {
+   "id": 5634,
+   "name": "Lodhi Road, New Delhi - IMD",
+   "lat": 28.5918,
+   "lon": 77.2273,
+   "heldOut": false
+  },
+  {
+   "id": 6356,
+   "name": "Pusa, Delhi - DPCC",
+   "lat": 28.6396,
+   "lon": 77.1463,
+   "heldOut": false
+  },
+  {
+   "id": 5404,
+   "name": "Pusa, Delhi - IMD",
+   "lat": 28.6396,
+   "lon": 77.1463,
+   "heldOut": false
+  },
+  {
+   "id": 6929,
+   "name": "Major Dhyan Chand National Stadium, Delhi - DPCC",
+   "lat": 28.6113,
+   "lon": 77.2377,
+   "heldOut": false
+  },
+  {
+   "id": 5598,
+   "name": "Sector - 125, Noida, UP - UPPCB",
+   "lat": 28.5448,
+   "lon": 77.3231,
+   "heldOut": false
+  },
+  {
+   "id": 5630,
+   "name": "Shadipur, Delhi - CPCB",
+   "lat": 28.6515,
+   "lon": 77.1473,
+   "heldOut": false
+  },
+  {
+   "id": 6358,
+   "name": "Mandir Marg, New Delhi - DPCC",
+   "lat": 28.6364,
+   "lon": 77.2011,
+   "heldOut": false
+  },
+  {
+   "id": 5610,
+   "name": "North Campus, DU, Delhi - IMD",
+   "lat": 28.6574,
+   "lon": 77.1585,
+   "heldOut": false
+  },
+  {
+   "id": 5613,
+   "name": "ITO, New Delhi - CPCB",
+   "lat": 28.6286,
+   "lon": 77.2411,
+   "heldOut": false
+  },
+  {
+   "id": 50,
+   "name": "Punjabi Bagh, Delhi - DPCC",
+   "lat": 28.674,
+   "lon": 77.131,
+   "heldOut": false
+  },
+  {
+   "id": 6980,
+   "name": "Sector-1, Noida - UPPCB",
+   "lat": 28.5892,
+   "lon": 77.322,
+   "heldOut": false
+  },
+  {
+   "id": 10486,
+   "name": "Mundka, Delhi - DPCC",
+   "lat": 28.6847,
+   "lon": 77.0766,
+   "heldOut": false
+  },
+  {
+   "id": 11603,
+   "name": "Chandni Chowk, Delhi - IITM",
+   "lat": 28.6568,
+   "lon": 77.2272,
+   "heldOut": false
+  },
+  {
+   "id": 6960,
+   "name": "Patparganj, Delhi - DPCC",
+   "lat": 28.6237,
+   "lon": 77.2872,
+   "heldOut": false
+  },
+  {
+   "id": 6936,
+   "name": "Arya Nagar, Bahadurgarh - HSPCB",
+   "lat": 28.6701,
+   "lon": 76.9254,
+   "heldOut": false
+  },
+  {
+   "id": 8917,
+   "name": "Ashok Vihar, Delhi - DPCC",
+   "lat": 28.6954,
+   "lon": 77.1817,
+   "heldOut": false
+  },
+  {
+   "id": 8915,
+   "name": "Wazirpur, Delhi - DPCC",
+   "lat": 28.6998,
+   "lon": 77.1655,
+   "heldOut": false
+  },
+  {
+   "id": 235,
+   "name": "Anand Vihar, New Delhi - DPCC",
+   "lat": 28.6468,
+   "lon": 77.316,
+   "heldOut": false
+  },
+  {
+   "id": 6988,
+   "name": "Sector-116, Noida - UPPCB",
+   "lat": 28.5692,
+   "lon": 77.3938,
+   "heldOut": false
+  },
+  {
+   "id": 5616,
+   "name": "Sector - 62, Noida, UP - IMD",
+   "lat": 28.6245,
+   "lon": 77.3577,
+   "heldOut": false
+  },
+  {
+   "id": 10831,
+   "name": "Rohini, Delhi - DPCC",
+   "lat": 28.7325,
+   "lon": 77.1199,
+   "heldOut": false
+  },
+  {
+   "id": 6938,
+   "name": "Vivek Vihar, Delhi - DPCC",
+   "lat": 28.6723,
+   "lon": 77.3153,
+   "heldOut": false
+  },
+  {
+   "id": 6359,
+   "name": "IHBAS, Dilshad Garden,New Delhi - CPCB",
+   "lat": 28.6812,
+   "lon": 77.3025,
+   "heldOut": false
+  },
+  {
+   "id": 8235,
+   "name": "Jahangirpuri, Delhi - DPCC",
+   "lat": 28.7328,
+   "lon": 77.1706,
+   "heldOut": false
+  },
+  {
+   "id": 5541,
+   "name": "Burari Crossing, New Delhi - IMD",
+   "lat": 28.7257,
+   "lon": 77.2012,
+   "heldOut": false
+  },
+  {
+   "id": 8475,
+   "name": "Sonia Vihar, Delhi - DPCC",
+   "lat": 28.7105,
+   "lon": 77.2495,
+   "heldOut": false
+  },
+  {
+   "id": 6924,
+   "name": "Indirapuram, Ghaziabad - UPPCB",
+   "lat": 28.6462,
+   "lon": 77.3581,
+   "heldOut": false
+  },
+  {
+   "id": 5626,
+   "name": "DTU, New Delhi - CPCB",
+   "lat": 28.75,
+   "lon": 77.1113,
+   "heldOut": false
+  },
+  {
+   "id": 5665,
+   "name": "Vasundhara, Ghaziabad - UPPCB",
+   "lat": 28.6603,
+   "lon": 77.3573,
+   "heldOut": false
+  },
+  {
+   "id": 6978,
+   "name": "Knowledge Park - III, Greater Noida - UPPCB",
+   "lat": 28.4727,
+   "lon": 77.482,
+   "heldOut": false
+  },
+  {
+   "id": 6986,
+   "name": "Knowledge Park - V, Greater Noida - UPPCB",
+   "lat": 28.5571,
+   "lon": 77.4537,
+   "heldOut": false
+  },
+  {
+   "id": 8472,
+   "name": "Bawana, Delhi - DPCC",
+   "lat": 28.7762,
+   "lon": 77.0511,
+   "heldOut": false
+  },
+  {
+   "id": 7005,
+   "name": "Loni, Ghaziabad - UPPCB",
+   "lat": 28.7573,
+   "lon": 77.2788,
+   "heldOut": false
+  },
+  {
+   "id": 6932,
+   "name": "Alipur, Delhi - DPCC",
+   "lat": 28.8153,
+   "lon": 77.153,
+   "heldOut": false
+  },
+  {
+   "id": 10485,
+   "name": "Narela, Delhi - DPCC",
+   "lat": 28.8228,
+   "lon": 77.102,
+   "heldOut": false
+  }
+ ],
+ "heldOutStations": [
+  "Sector-51, Gurugram - HSPCB",
+  "Teri Gram, Gurugram - HSPCB",
+  "NISE Gwal Pahari, Gurugram - IMD",
+  "Vikas Sadan, Gurugram - HSPCB",
+  "Aya Nagar, New Delhi - IMD",
+  "Sector-2 IMT, Manesar - HSPCB"
+ ],
+ "metrics": {
+  "pm10": {
+   "spatialTest": {
+    "stations": 6,
+    "hours": 45527,
+    "hourlyRmse": {
+     "cams": 591.74,
+     "corrected": 102.75
+    },
+    "hourlyBias": {
+     "cams": 244.6,
+     "corrected": 2.43
+    },
+    "dailyR2": {
+     "cams": -30.01,
+     "corrected": 0.47
+    },
+    "exceedance": {
+     "limit": 100,
+     "obsDays": 1215,
+     "cams": {
+      "days": 1256,
+      "pod": 0.85,
+      "far": 0.18
+     },
+     "corrected": {
+      "days": 1292,
+      "pod": 0.92,
+      "far": 0.14
+     }
+    }
+   },
+   "timeTest": {
+    "stations": 52,
+    "hours": 241802,
+    "hourlyRmse": {
+     "cams": 468.04,
+     "corrected": 101.38
+    },
+    "hourlyBias": {
+     "cams": 200.2,
+     "corrected": -20.68
+    },
+    "dailyR2": {
+     "cams": -23.85,
+     "corrected": 0.24
+    },
+    "exceedance": {
+     "limit": 100,
+     "obsDays": 7352,
+     "cams": {
+      "days": 7033,
+      "pod": 0.85,
+      "far": 0.11
+     },
+     "corrected": {
+      "days": 7398,
+      "pod": 0.89,
+      "far": 0.12
+     }
+    }
+   }
+  },
+  "pm25": {
+   "spatialTest": {
+    "stations": 6,
+    "hours": 44978,
+    "hourlyRmse": {
+     "cams": 86.64,
+     "corrected": 66.56
+    },
+    "hourlyBias": {
+     "cams": 13.4,
+     "corrected": -8.54
+    },
+    "dailyR2": {
+     "cams": -0.35,
+     "corrected": 0.33
+    },
+    "exceedance": {
+     "limit": 60,
+     "obsDays": 970,
+     "cams": {
+      "days": 1240,
+      "pod": 0.9,
+      "far": 0.3
+     },
+     "corrected": {
+      "days": 724,
+      "pod": 0.68,
+      "far": 0.09
+     }
+    }
+   },
+   "timeTest": {
+    "stations": 52,
+    "hours": 239532,
+    "hourlyRmse": {
+     "cams": 68.95,
+     "corrected": 36.24
+    },
+    "hourlyBias": {
+     "cams": 27.69,
+     "corrected": -4.72
+    },
+    "dailyR2": {
+     "cams": -2.55,
+     "corrected": 0.36
+    },
+    "exceedance": {
+     "limit": 60,
+     "obsDays": 3815,
+     "cams": {
+      "days": 6747,
+      "pod": 0.87,
+      "far": 0.51
+     },
+     "corrected": {
+      "days": 3193,
+      "pod": 0.6,
+      "far": 0.29
+     }
+    }
+   }
+  }
+ },
+ "timeSplit": "2026-02-01",
+ "limitations": [
+  "Trained on about 20 months (Feb 2025 to Oct 2026): OpenAQ has no CPCB data for NCR from Nov 2022 to Jan 2025.",
+  "Valid only near the training stations; elsewhere the app uses raw CAMS.",
+  "The strongest inputs are humidity, rainfall and season, so the model partly learns the NCR seasonal cycle.",
+  "Corrected PM2.5 undercounts days above the 24-hour limit at the held-out stations."
+ ]
+}

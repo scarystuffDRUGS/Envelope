@@ -1,0 +1,24 @@
+{
+  "name": "Office tower (demo)",
+  "use": "office",
+  "structure": "rcc-frame",
+  "stage": "pre-construction",
+  "site": {
+    "label": "Demo plot, Gurugram, Haryana",
+    "lat": 28.406,
+    "lon": 77.085,
+    "timezone": "Asia/Kolkata",
+    "plotBufferM": 15,
+    "groundEllipsoidalM": 205.5
+  },
+  "footprint": [
+    [77.08477039, 28.40586465],
+    [77.08522961, 28.40586465],
+    [77.08522961, 28.40613535],
+    [77.08477039, 28.40613535]
+  ],
+  "floors": 12,
+  "floorToFloorM": 3.6,
+  "wwr": { "N": 0.4, "E": 0.4, "S": 0.4, "W": 0.4 },
+  "roofType": "flat"
+}

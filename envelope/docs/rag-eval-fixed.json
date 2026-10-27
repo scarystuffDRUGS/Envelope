@@ -1,0 +1,459 @@
+{
+  "generatedAt": "2026-10-26T17:16:15.158Z",
+  "weatherYear": 2025,
+  "scenarios": [
+    "none",
+    "dust",
+    "heat",
+    "ghg",
+    "all"
+  ],
+  "summary": [
+    {
+      "arm": "llm+rag",
+      "runs": 5,
+      "citationValidity": 0.9574468085106383,
+      "weakSupportRate": 0.06382978723404255,
+      "citationsPerReport": 18.8,
+      "regulatoryCitedShare": 0.8421052631578947,
+      "droppedPerReport": 1.2,
+      "droppedNumbersPerReport": 0.2,
+      "droppedUncitedPerReport": 0.2,
+      "retryRate": 0.4,
+      "meanSeconds": 54.879999999999995
+    },
+    {
+      "arm": "llm",
+      "runs": 5,
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "citationsPerReport": 0,
+      "regulatoryCitedShare": 0,
+      "droppedPerReport": 0,
+      "droppedNumbersPerReport": 0,
+      "droppedUncitedPerReport": 0,
+      "retryRate": 0.2,
+      "meanSeconds": 33.08
+    },
+    {
+      "arm": "template+rag",
+      "runs": 5,
+      "citationValidity": 1,
+      "weakSupportRate": 0.13333333333333333,
+      "citationsPerReport": 9,
+      "regulatoryCitedShare": 0.6666666666666666,
+      "droppedPerReport": 0,
+      "droppedNumbersPerReport": 0,
+      "droppedUncitedPerReport": 0,
+      "retryRate": 0,
+      "meanSeconds": 0.02
+    }
+  ],
+  "runs": [
+    {
+      "scenario": "none",
+      "arm": "llm+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 45.3,
+      "passages": 16,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 1
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.1111111111111111,
+      "flaggedUncited": 1,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 48,
+      "regulatory": 3,
+      "regulatoryCited": 2
+    },
+    {
+      "scenario": "none",
+      "arm": "llm",
+      "writer": "Gemini, figures validated",
+      "retried": false,
+      "seconds": 11.9,
+      "passages": 0,
+      "references": 0,
+      "citations": {
+        "total": 0,
+        "valid": 0,
+        "weak": 0
+      },
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 55,
+      "regulatory": 6,
+      "regulatoryCited": 0
+    },
+    {
+      "scenario": "none",
+      "arm": "template+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 0,
+      "passages": 16,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 1
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.1111111111111111,
+      "flaggedUncited": 1,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 48,
+      "regulatory": 3,
+      "regulatoryCited": 2
+    },
+    {
+      "scenario": "dust",
+      "arm": "llm+rag",
+      "writer": "Gemini, figures and citations validated",
+      "retried": true,
+      "seconds": 61.5,
+      "passages": 15,
+      "references": 14,
+      "citations": {
+        "total": 26,
+        "valid": 22,
+        "weak": 1
+      },
+      "citationValidity": 0.8461538461538461,
+      "weakSupportRate": 0.038461538461538464,
+      "flaggedUncited": 1,
+      "dropped": {
+        "total": 5,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 4,
+        "uncitedRegulatory": 1
+      },
+      "sentences": 55,
+      "regulatory": 4,
+      "regulatoryCited": 4
+    },
+    {
+      "scenario": "dust",
+      "arm": "llm",
+      "writer": "Gemini, figures validated",
+      "retried": false,
+      "seconds": 27.6,
+      "passages": 0,
+      "references": 0,
+      "citations": {
+        "total": 0,
+        "valid": 0,
+        "weak": 0
+      },
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 64,
+      "regulatory": 5,
+      "regulatoryCited": 0
+    },
+    {
+      "scenario": "dust",
+      "arm": "template+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 0.1,
+      "passages": 15,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 2
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.2222222222222222,
+      "flaggedUncited": 1,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 48,
+      "regulatory": 3,
+      "regulatoryCited": 2
+    },
+    {
+      "scenario": "heat",
+      "arm": "llm+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 45.3,
+      "passages": 16,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 1
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.1111111111111111,
+      "flaggedUncited": 1,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 48,
+      "regulatory": 3,
+      "regulatoryCited": 2
+    },
+    {
+      "scenario": "heat",
+      "arm": "llm",
+      "writer": "Gemini, figures validated",
+      "retried": false,
+      "seconds": 23.5,
+      "passages": 0,
+      "references": 0,
+      "citations": {
+        "total": 0,
+        "valid": 0,
+        "weak": 0
+      },
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 55,
+      "regulatory": 5,
+      "regulatoryCited": 0
+    },
+    {
+      "scenario": "heat",
+      "arm": "template+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 0,
+      "passages": 16,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 1
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.1111111111111111,
+      "flaggedUncited": 1,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 48,
+      "regulatory": 3,
+      "regulatoryCited": 2
+    },
+    {
+      "scenario": "ghg",
+      "arm": "llm+rag",
+      "writer": "Gemini, figures and citations validated",
+      "retried": true,
+      "seconds": 76.9,
+      "passages": 16,
+      "references": 15,
+      "citations": {
+        "total": 41,
+        "valid": 41,
+        "weak": 2
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.04878048780487805,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 1,
+        "numbers": 1,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 47,
+      "regulatory": 6,
+      "regulatoryCited": 6
+    },
+    {
+      "scenario": "ghg",
+      "arm": "llm",
+      "writer": "Groq, figures validated",
+      "retried": false,
+      "seconds": 39.2,
+      "passages": 0,
+      "references": 0,
+      "citations": {
+        "total": 0,
+        "valid": 0,
+        "weak": 0
+      },
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 41,
+      "regulatory": 6,
+      "regulatoryCited": 0
+    },
+    {
+      "scenario": "ghg",
+      "arm": "template+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 0,
+      "passages": 16,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 1
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.1111111111111111,
+      "flaggedUncited": 1,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 48,
+      "regulatory": 3,
+      "regulatoryCited": 2
+    },
+    {
+      "scenario": "all",
+      "arm": "llm+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 45.4,
+      "passages": 15,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 1
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.1111111111111111,
+      "flaggedUncited": 1,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 48,
+      "regulatory": 3,
+      "regulatoryCited": 2
+    },
+    {
+      "scenario": "all",
+      "arm": "llm",
+      "writer": "Gemini, figures validated",
+      "retried": true,
+      "seconds": 63.2,
+      "passages": 0,
+      "references": 0,
+      "citations": {
+        "total": 0,
+        "valid": 0,
+        "weak": 0
+      },
+      "citationValidity": null,
+      "weakSupportRate": null,
+      "flaggedUncited": 0,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 59,
+      "regulatory": 5,
+      "regulatoryCited": 0
+    },
+    {
+      "scenario": "all",
+      "arm": "template+rag",
+      "writer": "Deterministic template",
+      "retried": false,
+      "seconds": 0,
+      "passages": 15,
+      "references": 6,
+      "citations": {
+        "total": 9,
+        "valid": 9,
+        "weak": 1
+      },
+      "citationValidity": 1,
+      "weakSupportRate": 0.1111111111111111,
+      "flaggedUncited": 1,
+      "dropped": {
+        "total": 0,
+        "numbers": 0,
+        "banned": 0,
+        "unknownCitation": 0,
+        "uncitedRegulatory": 0
+      },
+      "sentences": 48,
+      "regulatory": 3,
+      "regulatoryCited": 2
+    }
+  ]
+}

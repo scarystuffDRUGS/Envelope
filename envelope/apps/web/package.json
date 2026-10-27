@@ -1,0 +1,39 @@
+{
+  "name": "@envelope/web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@envelope/data": "workspace:^",
+    "@envelope/models": "workspace:^",
+    "@envelope/report": "workspace:^",
+    "@fluentui/react-components": "^9.74.9",
+    "@fluentui/react-icons": "^2.0.343",
+    "@fontsource-variable/roboto-flex": "5",
+    "@fontsource/roboto": "5",
+    "@gltf-transform/core": "4.5.1",
+    "ag-grid-community": "^36.2.0",
+    "ag-grid-react": "^36.2.0",
+    "cesium": "^1.146.0",
+    "comlink": "^4.4.2",
+    "echarts": "^6.1.0",
+    "material-symbols": "0.27",
+    "react": "^18",
+    "react-dom": "^18",
+    "web-ifc": "0.0.78",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4",
+    "vite": "^6",
+    "vite-plugin-static-copy": "^4.1.1"
+  }
+}

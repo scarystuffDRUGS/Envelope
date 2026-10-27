@@ -1,0 +1,24 @@
+node_modules/
+dist/
+.cache/
+.env
+.env.*
+!.env.example
+coverage/
+test-results/
+playwright-report/
+blob-report/
+*.tsbuildinfo
+.vite/
+~$*
+.DS_Store
+
+# Vercel build output and CLI project link
+.vercel/
+
+# Report corpus PDFs (licences vary; corpus/manifest.json lists the sources)
+corpus/raw/
+
+# Python training environment (ml/, D-038)
+ml/.venv/
+ml/__pycache__/

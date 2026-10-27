@@ -1,0 +1,40 @@
+{
+  "name": "envelope",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c gray,green \"pnpm --filter @envelope/server dev\" \"pnpm --filter @envelope/web dev\"",
+    "build": "pnpm -r build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "typecheck": "tsc -p tsconfig.json && pnpm -r typecheck",
+    "snapshot:demo": "pnpm --filter @envelope/server snapshot:demo",
+    "build:vercel": "node scripts/build-vercel.mjs",
+    "pack:share": "node scripts/pack-share.mjs",
+    "rag:build": "pnpm --filter @envelope/server rag:build",
+    "rag:eval": "pnpm --filter @envelope/server rag:eval"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "@vitest/coverage-v8": "^3",
+    "concurrently": "^10.0.5",
+    "esbuild": "0.28.2",
+    "eslint": "^9",
+    "eslint-plugin-react-hooks": "^5",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.9",
+    "typescript": "~5.8",
+    "typescript-eslint": "^8.71.1",
+    "vitest": "^3"
+  }
+}

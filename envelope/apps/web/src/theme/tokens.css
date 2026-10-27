@@ -1,0 +1,121 @@
+/*
+ * Envelope design tokens (Material 3 roles seeded from brand green #237A45, D-010; tertiary is a harmonised blue).
+ * Source of truth: the Envelope design system (tokens.json). The theme is set on <html data-theme>.
+ */
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+  --primary: #1f6c3e;
+  --on-primary: #ffffff;
+  --primary-container: #a6f3b9;
+  --on-primary-container: #00522b;
+  --secondary: #4f6352;
+  --on-secondary: #ffffff;
+  --secondary-container: #d2e8d3;
+  --on-secondary-container: #384b3c;
+  --tertiary: #2b5ea7;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #d6e3ff;
+  --on-tertiary-container: #0e4689;
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #93000a;
+  --warning-container: #ffe08b;
+  --on-warning-container: #574500;
+  --surface: #f6fbf3;
+  --surface-dim: #d6dbd4;
+  --surface-bright: #f6fbf3;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f0f5ed;
+  --surface-container: #eaefe8;
+  --surface-container-high: #e4eae2;
+  --surface-container-highest: #dfe4dc;
+  --on-surface: #171d18;
+  --on-surface-variant: #414942;
+  --outline: #717971;
+  --outline-variant: #c1c9c0;
+  --inverse-surface: #2c322d;
+  --inverse-on-surface: #edf2eb;
+  --inverse-primary: #8ad79e;
+  --scrim: rgba(0, 0, 0, 0.32);
+  --wordmark: #2f9e5b;
+  --chart-baseline: #8b938a;
+  --chart-mitigated: #1f6c3e;
+  --chart-grid: #e4eae2;
+  --map-bg: #dadde0;
+
+  --elevation-1: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --elevation-2: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 6px 2px rgba(0, 0, 0, 0.15);
+  --elevation-3: 0 4px 8px 3px rgba(0, 0, 0, 0.15), 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --primary: #8ad79e;
+  --on-primary: #00391c;
+  --primary-container: #00522b;
+  --on-primary-container: #a6f3b9;
+  --secondary: #b6ccb8;
+  --on-secondary: #213526;
+  --secondary-container: #384b3c;
+  --on-secondary-container: #d2e8d3;
+  --tertiary: #a9c7ff;
+  --on-tertiary: #003063;
+  --tertiary-container: #0e4689;
+  --on-tertiary-container: #d6e3ff;
+  --error: #ffb4ab;
+  --on-error: #690005;
+  --error-container: #93000a;
+  --on-error-container: #ffdad6;
+  --warning-container: #574500;
+  --on-warning-container: #ffe08b;
+  --surface: #0f1511;
+  --surface-dim: #0f1511;
+  --surface-bright: #353b36;
+  --surface-container-lowest: #0a0f0c;
+  --surface-container-low: #171d18;
+  --surface-container: #1b211c;
+  --surface-container-high: #252b26;
+  --surface-container-highest: #303630;
+  --on-surface: #dfe4dc;
+  --on-surface-variant: #c1c9c0;
+  --outline: #8b938a;
+  --outline-variant: #414942;
+  --inverse-surface: #dfe4dc;
+  --inverse-on-surface: #2c322d;
+  --inverse-primary: #1f6c3e;
+  --scrim: rgba(0, 0, 0, 0.5);
+  --chart-baseline: #8b938a;
+  --chart-mitigated: #8ad79e;
+  --chart-grid: #303630;
+  --map-bg: #1b211c;
+}
+
+:root {
+  --font-brand: 'Roboto Flex Variable', Roboto, system-ui, sans-serif;
+  --font-plain: Roboto, system-ui, sans-serif;
+  --font-mono: 'Roboto Mono', Consolas, ui-monospace, monospace;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  --state-hover: 0.08;
+  --state-focus: 0.1;
+  --state-pressed: 0.1;
+
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --duration-short: 150ms;
+  --duration-medium: 250ms;
+}

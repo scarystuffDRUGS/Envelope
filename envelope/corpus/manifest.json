@@ -1,0 +1,160 @@
+{
+  "$comment": "Report-narrative corpus (D-036, DATA_SOURCES.md). PDFs go in corpus/raw/<file> (gitignored); `pnpm rag:build` indexes the ones present. pages = [first, last] to keep, 1-based, inclusive. aliases = names a report may use for the document; a payload query naming one searches that document directly.",
+  "docs": [
+    {
+      "id": "ap42-13.2.2",
+      "file": "ap42-13.2.2.pdf",
+      "title": "AP-42, Fifth Edition, Volume I, Section 13.2.2: Unpaved Roads",
+      "aliases": ["AP-42 13.2.2", "AP-42 Section 13.2.2", "unpaved road"],
+      "issuer": "US Environmental Protection Agency",
+      "year": "2006",
+      "url": "https://www.epa.gov/sites/default/files/2020-10/documents/13.2.2_unpaved_roads.pdf",
+      "licence": "US Government work, public domain (17 U.S.C. § 105)",
+      "kind": "method",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": "ap42-13.2.4",
+      "file": "ap42-13.2.4.pdf",
+      "title": "AP-42, Fifth Edition, Volume I, Section 13.2.4: Aggregate Handling and Storage Piles",
+      "aliases": ["AP-42 13.2.4", "AP-42 Section 13.2.4", "material handling"],
+      "issuer": "US Environmental Protection Agency",
+      "year": "2006",
+      "url": "https://www.epa.gov/sites/default/files/2020-10/documents/13.2.4_aggregate_handling_and_storage_piles.pdf",
+      "licence": "US Government work, public domain (17 U.S.C. § 105)",
+      "kind": "method",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": "ap42-13.2.5",
+      "file": "ap42-13.2.5.pdf",
+      "title": "AP-42, Fifth Edition, Volume I, Section 13.2.5: Industrial Wind Erosion",
+      "aliases": ["AP-42 13.2.5", "AP-42 Section 13.2.5", "wind erosion"],
+      "issuer": "US Environmental Protection Agency",
+      "year": "2006",
+      "url": "https://www.epa.gov/sites/default/files/2020-10/documents/13.2.5_industrial_wind_erosion.pdf",
+      "licence": "US Government work, public domain (17 U.S.C. § 105)",
+      "kind": "method",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": "naaqs-2009",
+      "file": "naaqs-2009.pdf",
+      "title": "National Ambient Air Quality Standards, notification of 18 November 2009",
+      "aliases": ["NAAQS", "National Ambient Air Quality Standards"],
+      "issuer": "Central Pollution Control Board",
+      "year": "2009",
+      "url": "https://scclmines.com/env/docs/naaqs-2009.pdf",
+      "officialRef": "Gazette of India, Extraordinary, 18 November 2009; copy hosted by a third party until a CPCB copy is obtained",
+      "licence": "Matter published in the Official Gazette; reproduction permitted by the Copyright Act, 1957, s. 52(1)(q)",
+      "kind": "regulation",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": "eia-2006",
+      "file": "eia-2006.pdf",
+      "title": "Environment Impact Assessment Notification, 2006 (S.O. 1533(E)), consolidated with amendments to March 2025",
+      "aliases": [
+        "EIA Notification",
+        "Environment Impact Assessment Notification",
+        "environmental clearance"
+      ],
+      "issuer": "Ministry of Environment, Forest and Climate Change (compilation by Tamil Nadu Pollution Control Board)",
+      "year": "2025",
+      "url": "https://tnpcb.gov.in/PDF/ES&L/ENV-LSG/EIA_Notification_2006_including_all_amendments_till_March_2025.pdf",
+      "officialRef": "S.O. 1533(E), Gazette of India, 14 September 2006, and amendments; the Gazette text prevails over the compilation",
+      "licence": "Matter published in the Official Gazette; reproduction permitted by the Copyright Act, 1957, s. 52(1)(q)",
+      "kind": "regulation",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": "cpcb-cd-2017",
+      "file": "cpcb-cd-2017.pdf",
+      "title": "Guidelines on Environmental Management of C&D Waste Management in India (draft, February 2017)",
+      "aliases": ["C&D waste", "construction and demolition waste"],
+      "issuer": "Central Pollution Control Board",
+      "year": "2017",
+      "url": "https://www.mpcb.gov.in/sites/default/files/focus-area-reports-documents/guidelines_C%26D_19042017.pdf",
+      "licence": "CPCB publication, no licence stated; short passages quoted with attribution",
+      "kind": "guideline",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": "gsr-94e-2018",
+      "file": "gsr-94e-2018.pdf",
+      "title": "Environment (Protection) Amendment Rules, 2018 (G.S.R. 94(E)): dust mitigation for construction and demolition",
+      "aliases": [
+        "G.S.R. 94(E)",
+        "Environment (Protection) Amendment Rules, 2018",
+        "dust mitigation measures"
+      ],
+      "issuer": "Ministry of Environment, Forest and Climate Change",
+      "year": "2018",
+      "url": "https://egazette.gov.in/",
+      "officialRef": "G.S.R. 94(E), Gazette of India, 25 January 2018",
+      "licence": "Matter published in the Official Gazette; reproduction permitted by the Copyright Act, 1957, s. 52(1)(q)",
+      "kind": "regulation",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": "cpcb-dust-2017",
+      "file": "cpcb-dust-2017.pdf",
+      "title": "Guidelines on Dust Mitigation Measures in Handling Construction Material and C&D Wastes",
+      "aliases": ["dust mitigation measures"],
+      "issuer": "Central Pollution Control Board",
+      "year": "2017",
+      "url": "https://cpcb.nic.in/",
+      "licence": "CPCB publication, no licence stated; short passages quoted with attribution",
+      "kind": "guideline",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": "caqm-97-2026",
+      "file": "caqm-97-2026.pdf",
+      "title": "Statutory Direction No. 97: mitigation of dust in construction and demolition projects in NCR",
+      "aliases": ["CAQM", "Commission for Air Quality Management"],
+      "issuer": "Commission for Air Quality Management in NCR and Adjoining Areas",
+      "year": "2026",
+      "url": "https://caqm.nic.in/WriteReadData/LINKS/1563%20DT%20Direction%20No%2097%20(20022026)cba20dda-1bdc-4db9-b633-2efbcc03cb25.pdf",
+      "licence": "Statutory direction of a Government of India commission; reproduction for information with attribution",
+      "kind": "regulation",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": "cea-v21",
+      "file": "cea-v21.pdf",
+      "title": "CO2 Baseline Database for the Indian Power Sector, User Guide, Version 21.0",
+      "aliases": ["CO2 Baseline Database", "grid emission factor", "CEA"],
+      "issuer": "Central Electricity Authority, Ministry of Power",
+      "year": "2025",
+      "url": "https://cea.nic.in/wp-content/uploads/baseline/2025/12/User_Guide_V_21.0.pdf",
+      "licence": "CEA publication, no licence stated; short passages quoted with attribution",
+      "kind": "data",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": "cd-rules-2025",
+      "file": "cd-rules-2025.pdf",
+      "title": "Environment (Construction and Demolition) Waste Management Rules, 2025",
+      "aliases": ["C&D Waste Management Rules", "Construction and Demolition) Waste Management Rules"],
+      "issuer": "Ministry of Environment, Forest and Climate Change",
+      "year": "2025",
+      "url": "https://www.indiaenvironmentportal.org.in/reports-and-documents/environment-construction-and-demolition-waste-management-rules-2025",
+      "licence": "Matter published in the Official Gazette; reproduction permitted by the Copyright Act, 1957, s. 52(1)(q)",
+      "kind": "regulation",
+      "accessed": "2026-10-26"
+    },
+    {
+      "id": "era5-2020",
+      "file": "era5-2020.pdf",
+      "title": "Hersbach et al., The ERA5 global reanalysis, Quarterly Journal of the Royal Meteorological Society 146, doi:10.1002/qj.3803",
+      "aliases": ["ERA5"],
+      "issuer": "ECMWF / Royal Meteorological Society",
+      "year": "2020",
+      "url": "https://doi.org/10.1002/qj.3803",
+      "licence": "Open access, Creative Commons Attribution licence (to confirm on the article page)",
+      "kind": "data",
+      "accessed": "2026-10-26"
+    }
+  ]
+}

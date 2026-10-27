@@ -1,0 +1,7 @@
+pnpm-lock.yaml
+fixtures/
+docs/
+*.md
+.vercel/
+packages/models/src/data/
+ml/out/

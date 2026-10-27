@@ -1,0 +1,17 @@
+[project]
+name = "envelope-ml"
+version = "0.1.0"
+description = "Training for the CAMS background PM bias correction (D-038). Dev-only; nothing here is deployed."
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "lightgbm>=4.6",
+  "numpy>=2.2",
+  "pandas>=2.3",
+  "pyarrow>=21",
+  "python-dotenv>=1.1",
+  "requests>=2.32",
+  "scikit-learn>=1.7",
+]
+
+[tool.uv]
+package = false
